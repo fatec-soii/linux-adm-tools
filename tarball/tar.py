@@ -37,7 +37,7 @@ def extract_tar():
 def add_files_tar():
     try:
         file_path = input("Informe o nome do arquivo a ser criado: \n>>> ")
-        extencao = input("Informe a extenção dos arquivos a serem adicionados: \n>>> ")
+        extencao = input("Informe a extensão dos arquivos a serem adicionados: \n>>> ")
         with tarfile.open(file_path+'.tar.gz', 'w') as archive:
             for i in os.listdir():
                 archive.add(i, filter = lambda x: x if x.name.endswith('.'+extencao) else None)
