@@ -4,13 +4,13 @@ from time import sleep
 
 def menu():
     print("""
-                            Mudança de 
+                            Gerenciador de 
         ░▄▀▀▄░█▀▀▄░▄▀▀▄░▄▀▀▄░█▀▀▄░░▀░░█▀▀░▀█▀░█▀▀▄░█▀▀▄░░▀░░▄▀▀▄
         ░█▄▄█░█▄▄▀░█░░█░█▄▄█░█▄▄▀░░█▀░█▀▀░░█░░█▄▄█░█▄▄▀░░█▀░█░░█
         ░█░░░░▀░▀▀░░▀▀░░█░░░░▀░▀▀░▀▀▀░▀▀▀░░▀░░▀░░▀░▀░▀▀░▀▀▀░░▀▀░
     
     """)
-    os.system("ls --color")
+    os.system("ls -l --color")
     print()
 
 
@@ -29,6 +29,7 @@ def make_owner(file):
         group = input("Informe a que grupo o arquivo pertence:\n>>> ")
         os.system(f"chown -R -c {name}:{group} {file}")
         sleep(3)
+        os.system("clear || cls")
     except:
         print("Nome de Usuário ou Grupo inexistente.")
         print("Retornando ao menu inicial...")

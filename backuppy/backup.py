@@ -1,5 +1,5 @@
 import os
-
+from time import sleep
 
 def banner():
     print("""
@@ -40,6 +40,8 @@ def execute():
     source = get_source()
     destination = get_destination()
     backup(source, destination)
+    sleep(2)
+    os.system("clear || cls")
 
 
 def main():

@@ -111,14 +111,20 @@ def main():
             dir = dir_path()
             command = define_property()
             exec_property(command, dir, 1)
+            sleep(2)
+            choose()
         if option == 2:
             file = file_path()
             command = define_property()
             exec_property(command, file, 2)
+            sleep(2)
+            choose()
         if option == 3:
             os.system("ls -l --color")
+            sleep(2)
             choose()
         if option == 4:
+            sleep(1)
             os.system("cls || clear")
             pass #retornar menu inicial
             

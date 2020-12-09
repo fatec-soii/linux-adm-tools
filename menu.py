@@ -43,7 +43,7 @@ def banner_menu():
     [ 2 ] - Gerenciador Tarball
     [ 3 ] - Gerenciador de Permissoes
     [ 4 ] - Gerenciamento de Usuários
-    [ 5 ] - Mudança de Proprietário
+    [ 5 ] - Gerenciador de Proprietário
     [ 6 ] - Backup System
     [ 7 ] - Gerenciador de Pacotes
     [ 8 ] - Sair

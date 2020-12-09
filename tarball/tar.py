@@ -16,6 +16,7 @@ def list_tar():
     finally:
         print("Retornando ao menu...")
         sleep(2)
+        os.system("clear || cls")
         main()
         
         
@@ -30,6 +31,7 @@ def extract_tar():
     finally:
         print("Retornando ao menu...")
         sleep(2)
+        os.system("clear || cls")
         main()
 
 def add_files_tar():
@@ -45,6 +47,7 @@ def add_files_tar():
     finally:
         print("Retornando ao menu...")
         sleep(2)
+        os.system("clear || cls")
         main()
 
 
